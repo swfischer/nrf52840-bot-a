@@ -1,0 +1,26 @@
+
+manifest:
+  self:
+    path: apps
+
+  remotes:
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect
+
+  projects:
+    - name: nrf
+      remote: nrfconnect
+      repo-path: sdk-nrf
+      revision: v2.6.0
+      import:
+        name-blocklist: # Use blocklist to filter dependencies we want, modify as needed
+          - TraceRecorderSource
+          - canopennode
+          - civetweb
+          - fatfs
+          - loramac-node
+          - lvgl
+          - mipi-sys-t
+          - openthread
+          - zscilib
+          - matter
