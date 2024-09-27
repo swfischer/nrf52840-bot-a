@@ -50,3 +50,16 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Ignore virtual environments
+.venv/
+
+# Ignore build directory
+build*/
+
+# Mac files
+.DS_Store
+
+# Other directories to ignore
+.vscode/
+__pycache__/
