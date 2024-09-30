@@ -3,3 +3,13 @@ manifest:
   self:
     path: apps
 
+  remotes:
+    - name: zephyr-github
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    - name: zephyr
+      remote: zephyr-github
+      repo-path: zephyr
+      revision: v3.7.0
+      import: true
