@@ -11,5 +11,6 @@ manifest:
     - name: zephyr
       remote: zephyr-github
       repo-path: zephyr
-      revision: v3.7.0
+      # This is nearly 3.7.0, but had a compile error with 3.7.0 so sticking with this for now.
+      revision: 38ad4b6d43cfc875a7ce8fdbe96825aa3e86ce6d
       import: true
